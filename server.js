@@ -6,9 +6,7 @@ const mainRoute = require("./routes/route");
 const app = express();
 
 mongoose
-    .connect(
-        "mongodb://root:blank@127.0.0.1:27017/mongo?authSource=admin"
-    )
+    .connect("mongodb://hhz:hhz@127.0.0.1:27017/mongo")
     .then((result) => {
         console.log("Database Connected");
     })
